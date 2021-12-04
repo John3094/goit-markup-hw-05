@@ -29,7 +29,7 @@
           </a>
           <ul class="list header-list">
             <li class="header-item">
-              <a class="link header-link" href="./index.html">Студия</a>
+              <a class="link header-link current" href="./index.html">Студия</a>
             </li>
             <li class="header-item">
               <a class="link header-link" href="./portfolio.html">Портфолио</a>
@@ -59,7 +59,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="button hero-button" type="button">
+          <button class="button hero-button" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -129,6 +129,7 @@
                 width="370"
                 height="294"
               />
+              <p class="about-item-text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
             </li>
             <li class="about-item">
               <img
@@ -137,6 +138,7 @@
                 width="370"
                 height="294"
               />
+              <p class="about-item-text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
             </li>
             <li class="about-item">
               <img
@@ -145,6 +147,7 @@
                 width="370"
                 height="294"
               />
+              <p class="about-item-text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
             </li>
           </ul>
         </div>
@@ -448,5 +451,15 @@
         </div>
       </div>
     </footer>
+  <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-close-icon" width="18" height="18">
+            <use href="./images/icons-close.svg#vector.svg"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  <script src="./js/modal.js"></script>
   </body>
 </html>
